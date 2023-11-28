@@ -24,15 +24,15 @@
             </div>
             <!-- button-->
             <div class="input-group mb-3 button-container">
-                <input type="text" class="form-control" placeholder="Write to-do" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Send</button>
+                <input v-model="list[0].newItem" type="text" class="form-control" placeholder="Write to-do" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2" @click="addItems">Send</button>
               </div>
               <!-- button -->
               <!-- lista -->
-            <div class="list_container" v-for="(toDo) in list">
+            <div class="list_container">
                 <ul class="list-group">
-                    <li class="list-group-item">{{toDo.text}}</li>
-                  </ul>
+                    <li class="list-group-item " v-for="item in list[0].listItem">{{item}}</li>
+                </ul>
             </div>
             <!-- lista -->
         </main>
