@@ -6,3 +6,6 @@ body{
 .button-container{
     width: 40%;
 }
+.line{
+    text-decoration: line-through;
+}
