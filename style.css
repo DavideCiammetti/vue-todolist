@@ -1,0 +1,8 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* larghezza lista */
+.list_container,
+.button-container{
+    width: 40%;
+}
