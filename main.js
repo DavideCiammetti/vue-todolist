@@ -9,7 +9,7 @@ createApp({
             {
                 listItem :[],
                 newItem :'',
-                done : true,
+                done : false,
             },
         ],
     };
@@ -23,6 +23,10 @@ createApp({
             console.log(this.list[0].listItem);
             this.list[0].newItem = '';
          }
+    },
+    // rimuovo elemento al click sulla 'x'
+    removeItem(index){
+        this.list[0].listItem.splice(index, 1);
     }
   },
 }).mount('#app')
